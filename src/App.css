@@ -1,38 +1,41 @@
 .App {
-  text-align: center;
+	background: url(./components/fondo1.png) no-repeat center center fixed ;
+	background-size: cover;
+}
+.text {
+	color: #00000090;
+	text-align: center;
+	padding-top: 5vw;
+	font-size: 1.5vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p1 {
+padding-top: 10px;
+color: #ffffff;
+animation: bounce;
+animation-duration: 2s;
+animation-iteration-count: infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p2 {
+padding-top: 10px;
+color: #ffffff;
+font-size: 4vw;
+animation: bounce;
+animation-duration: 3s;
+animation-iteration-count: infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+	cursor: pointer;
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+@media all and (max-width: 1000px) { 
+.text {
+	font-size: 4vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p2 {
+	font-size: 10vw;
+}
 }
